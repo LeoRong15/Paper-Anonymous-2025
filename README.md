@@ -41,21 +41,24 @@ This project is the open-source implementation of a 2025 research paper, proposi
 
 ## Data Preparation
 
-- **Dataset Location**: This project includes a compressed file `data/images.zip` in the `data/` folder, containing the image dataset for COVID19-4 classification.
+- **Dataset Source**: The dataset used for this project is the "COVID-19 Radiography Database" available on Kaggle. Download it from the following link:
+  - [COVID-19 Radiography Database](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database/data)
 
-- **Data Format**: After extraction, images are organized into category-specific subfolders (e.g., `class1/`, `class2/`, etc.).
+- **Data Format**: After downloading, the dataset contains images organized into category-specific subfolders (e.g., `COVID/`, `Normal/`, `Viral Pneumonia/`, `Lung_Opacity/`).
 
-- Preparation Steps:
+- **Preparation Steps**:
 
-  1. Extract the dataset:
-
+  1. Download the dataset from the Kaggle link above.
+  2. Extract the downloaded archive (e.g., `COVID-19_Radiography_Dataset.zip`) into the `data/` folder:
      ```bash
-     unzip data/images.zip -d data/
+     unzip COVID-19_Radiography_Dataset.zip -d data/
      ```
 
-  2. Verify the extracted directory structure: `data/[category_name]/[image_files]`.
+  3. Verify the extracted directory structure: `data/[category_name]/[image_files]` (e.g., `data/COVID/`, `data/Normal/`, etc.).
 
-- **Preprocessing**: `data_utils.py` applies normalization by default. Parameters can be adjusted as needed.
+  4. Ensure the folder structure aligns with the four categories expected by the COVID19-4 classification task.
+
+  5. Preprocessing: `data_utils.py` applies normalization by default. Adjust parameters in `data_utils.py` if needed to match the dataset's characteristics.
 
 ## Usage
 
@@ -68,8 +71,11 @@ This project is the open-source implementation of a 2025 research paper, proposi
 
 2. **Extract the Data** (as described above):
 
+   - Download the "COVID-19 Radiography Database" from [Kaggle](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database/data).
+   - Extract the dataset into the data/ folder:
+
    ```bash
-   unzip data/images.zip -d data/
+   unzip COVID-19_Radiography_Dataset.zip -d data/
    ```
 
 3. **Run Training**:
