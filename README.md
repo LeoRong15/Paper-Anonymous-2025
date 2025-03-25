@@ -10,10 +10,7 @@ This project is the open-source implementation of a 2025 research paper, proposi
 
 - `data/`: Contains the image dataset for training (compressed as `images.zip`).
 
-- ```
-  src/
-  ```
-
+- `src/`: 
   - `data_utils.py`: Data loading and preprocessing logic.
   - `models.py`: Defines the enhanced ConvNeXt model with attention mechanisms.
   - `losses.py`: Custom loss function implementations.
