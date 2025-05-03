@@ -1,4 +1,4 @@
-# Anonymous Research Project (2025)
+# PneumoNeXt (2025)
 
 This project implements an enhanced ConvNeXt model with attention mechanisms for COVID19-4 image classification, targeting four categories related to COVID-19 imagery. The enhancements aim to improve feature extraction and classification robustness.
 
